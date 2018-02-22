@@ -49,7 +49,7 @@ hardBtn.addEventListener("click", function() {
 });
 
 resetButton.addEventListener("click", function() {
-    colors = generateColors(6);
+    colors = generateColors(numCircles);
     resetButton.textContent = "Reset colors"
     correctColor = pickColor();
     colorDisplay.textContent = correctColor;
