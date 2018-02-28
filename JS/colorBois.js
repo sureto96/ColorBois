@@ -9,9 +9,19 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
-var click = new Audio('Assets/click.wav');
-var correct = new Audio('Assets/correct.wav');
-var incorrect = new Audio('Assets/incorrect.wav');
+
+var click = new Howl({
+    src: ['Assets/click.wav']
+});
+
+var correct = new Howl({
+    src: ['Assets/correct.wav']
+});
+
+var incorrect = new Howl({
+    src: ['Assets/incorrect.wav']
+});
+
 
 easyBtn.addEventListener("click", function() {
    easyBtn.classList.add("selected");
